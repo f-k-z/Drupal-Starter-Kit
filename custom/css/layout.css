@@ -1,0 +1,134 @@
+/* VARIABLES */
+/* line 8, layout.scss */
+hr, .ahem, #skip-link {
+  display: none;
+}
+
+/* line 12, layout.scss */
+body {
+  background: #ccffcc;
+}
+
+/* line 14, layout.scss */
+#content hr {
+  display: block;
+}
+
+/* line 18, layout.scss */
+#main {
+  background: #ccc;
+}
+
+/* line 19, layout.scss */
+#content {
+  background: #eee;
+}
+
+/* line 20, layout.scss */
+#sidebar-first {
+  background: #ccf;
+}
+
+/* line 21, layout.scss */
+#sidebar-second {
+  background: #fcc;
+}
+
+/* line 22, layout.scss */
+#navigation {
+  background: #ffc;
+}
+
+/* line 23, layout.scss */
+#header {
+  background: #cff;
+}
+
+/* line 27, layout.scss */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 32, layout.scss */
+#page {
+  background: #fff;
+}
+
+/* line 34, layout.scss */
+#content, #navigation, #sidebar-first, #sidebar-second {
+  float: left;
+}
+
+/* line 39, layout.scss */
+.with-navigation #content, .with-navigation #sidebar-first, .with-navigation #sidebar-second {
+  margin-top: 3em;
+  /* NAV height */
+}
+
+/* line 45, layout.scss */
+#navigation {
+  height: 3em;
+  /* NAV height */
+  width: 100%;
+  margin-right: -100%;
+}
+/* line 50, layout.scss */
+#navigation h2 {
+  margin: 0;
+}
+
+/* line 55, layout.scss */
+#content {
+  width: 100%;
+  margin-right: -100%;
+}
+
+/* line 60, layout.scss */
+.sidebar-first #content .section {
+  padding-left: 200px;
+  /* LC width */
+}
+
+/* line 65, layout.scss */
+.sidebar-second #content .section {
+  padding-right: 160px;
+  /* RC width */
+}
+
+/* line 70, layout.scss */
+.two-sidebars #content .section {
+  padding-left: 200px;
+  /* LC width */
+  padding-right: 160px;
+  /* RC width */
+}
+
+/* line 77, layout.scss */
+#sidebar-first {
+  width: 200px;
+  /* LC width */
+  margin-right: -200px;
+}
+
+/* line 83, layout.scss */
+#sidebar-second {
+  float: right;
+  width: 160px;
+  /* RC width */
+  margin-left: -160px;
+  /* RC width */
+}
+
+/* line 91, layout.scss */
+#footer {
+  background: #ccffcc;
+  clear: both;
+}
+
+/* IE6 fix */
+/* line 98, layout.scss */
+* html #sidebar-first {
+  left: 160px;
+  /* RC width */
+}

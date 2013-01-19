@@ -1,0 +1,226 @@
+/* line 1, normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 5, normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 9, normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 14, normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 18, normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* line 27, normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 32, normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 35, normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 40, normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 44, normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 48, normalize.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 52, normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 56, normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 61, normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 66, normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 72, normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 76, normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 80, normalize.scss */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 87, normalize.scss */
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+/* line 95, normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 99, normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 103, normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 107, normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 111, normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 117, normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/* line 124, normalize.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/* line 133, normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 137, normalize.scss */
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/* line 145, normalize.scss */
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/* line 153, normalize.scss */
+button[disabled] {
+  cursor: default;
+}
+
+/* line 158, normalize.scss */
+input[disabled] {
+  cursor: default;
+}
+/* line 161, normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/* line 167, normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/* line 174, normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 180, normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 185, normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* line 192, normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

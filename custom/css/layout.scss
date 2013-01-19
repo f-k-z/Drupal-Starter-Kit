@@ -1,0 +1,101 @@
+/* VARIABLES */
+
+$page_width: 960px;
+$sidebar1_width: 200px;
+$sidebar2_width: 160px;
+$footer_color:#cfc;
+
+hr, .ahem, #skip-link {
+  display: none;
+}
+
+body {background:$footer_color;}
+
+#content hr {
+  display: block;
+}
+
+#main           { background: #ccc; }
+#content        { background: #eee; }
+#sidebar-first  { background: #ccf; }
+#sidebar-second { background: #fcc; }
+#navigation     { background: #ffc; }
+#header         { background: #cff; }
+
+
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#page {background:#fff}
+
+#content, #navigation, #sidebar-first, #sidebar-second {
+  float: left;
+}
+
+.with-navigation {
+  #content, #sidebar-first, #sidebar-second {
+    margin-top: 3em;
+    /* NAV height */
+  }
+}
+
+#navigation {
+  height: 3em;
+  /* NAV height */
+  width: 100%;
+  margin-right: -100%;
+  h2 {
+    margin: 0;
+  }
+}
+
+#content {
+  width: 100%;
+  margin-right: -100%;
+}
+
+.sidebar-first #content .section {
+  padding-left: $sidebar1_width;
+  /* LC width */
+}
+
+.sidebar-second #content .section {
+  padding-right: $sidebar2_width;
+  /* RC width */
+}
+
+.two-sidebars #content .section {
+  padding-left: $sidebar1_width;
+  /* LC width */
+  padding-right: $sidebar2_width;
+  /* RC width */
+}
+
+#sidebar-first {
+  width: $sidebar1_width;
+  /* LC width */
+  margin-right: -$sidebar1_width;
+}
+
+#sidebar-second {
+  float: right;
+  width: $sidebar2_width;
+  /* RC width */
+  margin-left: -$sidebar2_width;
+  /* RC width */
+}
+
+#footer {
+  background:$footer_color;
+  clear: both;
+}
+
+/* IE6 fix */
+
+* html #sidebar-first {
+  left: $sidebar2_width;
+  /* RC width */
+}

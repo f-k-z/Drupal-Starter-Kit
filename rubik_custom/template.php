@@ -1,0 +1,1 @@
+<?php/** * Preprocessor for theme('page'). */function rubik_custom_preprocess_page(&$vars) {  // Process local tasks. Only do this processing if the current theme is  // indeed Rubik. Subthemes must reimplement this call.  global $theme;  if ($theme === 'rubik_custom') {    _rubik_local_tasks($vars);  }}

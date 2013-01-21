@@ -1,0 +1,9 @@
+name = Rubik custom
+description = overrides some css (and js).
+base theme = rubik
+core = 7.x
+engine = phptemplate
+
+
+;scripts[] = js/rubik.js
+stylesheets[all][] = overrides.css

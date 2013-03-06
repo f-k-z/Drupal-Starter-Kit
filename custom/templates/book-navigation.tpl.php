@@ -30,7 +30,7 @@
  */
 ?>
 <?php if ($tree || $has_links): ?>
-  <footer id="book-navigation-<?php print $book_id; ?>" class="book-navigation">
+  <div id="book-navigation-<?php print $book_id; ?>" class="book-navigation">
     <?php print $tree; ?>
 
     <?php if ($has_links): ?>
@@ -47,5 +47,5 @@
     </p>
     <?php endif; ?>
 
-  </footer> <!-- /.book-navigation -->
+  </div> <!-- /.book-navigation -->
 <?php endif; ?>

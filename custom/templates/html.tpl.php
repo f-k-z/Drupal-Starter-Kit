@@ -43,13 +43,6 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
 
-  	
-  	<meta name="audience" content="all">   
-  	<meta name="copyright" content="">
-  	<meta name="author" content="">
-  	<meta name="publisher" content="">
-
-  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   	<link rel="icon" href="<?php print path_to_theme(); ?>/favicon.ico" type="image/x-icon"> 
   	<link rel="shortcut icon" href="<?php print path_to_theme(); ?>/favicon.ico" type="image/x-icon"> 
 

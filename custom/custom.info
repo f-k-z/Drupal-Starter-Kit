@@ -20,10 +20,14 @@ stylesheets[screen][] = css/layout.css
 
 ; Scripts --------------------------------------------------------------------
 
+scripts[] = js/lib/jquery.min.js
 scripts[] = js/lib/modernizr.custom.min.js
+scripts[] = js/lib/jquery.animate-enhanced.min.js
+scripts[] = js/lib/jquery.easing.js
+scripts[] = js/lib/avoid.console.error.js
 ;scripts[] = js/lib/yepnope.min.js
-scripts[] = js/config.js
-scripts[] = js/load.js
+scripts[] = js/utils.js
+scripts[] = js/main.js
 
 ; Regions --------------------------------------------------------------------
 ; these content regions are available for block placement

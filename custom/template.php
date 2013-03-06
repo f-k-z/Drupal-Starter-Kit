@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains theme override functions and preprocess functions for the Boron theme.
+ * Contains theme override functions and preprocess functions
  */
 
 /**
@@ -14,53 +14,13 @@ function custom_html_head_alter(&$head_elements) {
   );
 }
 
-/**
- * Changes the search form to use the HTML5 "search" input attribute
- */
-function custom_preprocess_search_block_form(&$vars) {
-  $vars['search_form'] = str_replace('type="text"', 'type="search"', $vars['search_form']);
+
+function custom_preprocess_html(&$vars) {
+  
 }
 
-/**
- * Uses RDFa attributes if the RDF module is enabled
- * Lifted from Adaptivetheme for D7, full credit to Jeff Burnz
- * ref: http://drupal.org/node/887600
- */
-function custom_preprocess_html(&$vars) {
-  // Ensure that the $vars['rdf'] variable is an object.
-  if (!isset($vars['rdf']) || !is_object($vars['rdf'])) {
-    $vars['rdf'] = new StdClass();
-  }
-
-  if (module_exists('rdf')) {
-    $vars['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">' . "\n";
-    $vars['rdf']->version = 'version="HTML+RDFa 1.1"';
-    $vars['rdf']->namespaces = $vars['rdf_namespaces'];
-    $vars['rdf']->profile = ' profile="' . $vars['grddl_profile'] . '"';
-  } else {
-    $vars['doctype'] = '<!DOCTYPE html>' . "\n";
-    $vars['rdf']->version = '';
-    $vars['rdf']->namespaces = '';
-    $vars['rdf']->profile = '';
-  }
+function custom_preprocess_page(&$vars) {
   
-
- // use the $html5shiv variable in their html.tpl.php
-  $element = array(  
-    'element' => array(
-    '#tag' => 'script',
-    '#value' => '',
-    '#attributes' => array(
-      'src' => '//html5shiv.googlecode.com/svn/trunk/html5.js',
-     ),
-   ),
- );
-
- $shimset = theme_get_setting('custom_shim');
- $script = theme('html_tag', $element);
- //If the theme setting for adding the html5shim is checked, set the variable.
- if ($shimset == 1) { $vars['html5shim'] = "\n<!--[if lt IE 9]>\n" . $script . "<![endif]-->\n"; }
-
 }
 
 /**

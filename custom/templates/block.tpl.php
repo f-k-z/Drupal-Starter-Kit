@@ -41,8 +41,7 @@
  * @see template_process()
  */
 ?>
-<?php $tag = $block->subject ? 'section' : 'div'; ?>
-<<?php print $tag; ?> id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
   <?php if ($block->subject): ?>
@@ -54,4 +53,4 @@
     <?php print $content ?>
   </div> <!-- /.content -->
 
-</<?php print $tag; ?>> <!-- /.block -->
+</div> <!-- /.block -->

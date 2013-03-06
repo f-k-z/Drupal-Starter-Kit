@@ -55,9 +55,9 @@
  * @see theme_comment()
  */
 ?>
-<article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <header>
+  <div class="header">
     <?php print $picture ?>
 
     <?php if ($new): ?>
@@ -75,7 +75,7 @@
           array('!username' => $author, '!datetime' => $created));
       ?>
     </p>
-  </header>
+  </div>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
@@ -91,9 +91,9 @@
   </div> <!-- /.content -->
 
   <?php if (!empty($content['links'])): ?>
-    <footer>
+    <div class="footer">
       <?php print render($content['links']) ?>
-    </footer>
+    </div>
   <?php endif; ?>
 
-</article> <!-- /.comment -->
+</div> <!-- /.comment -->

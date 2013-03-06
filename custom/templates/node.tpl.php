@@ -76,10 +76,10 @@
  * @see template_process()
  */
 ?>
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php if ($user_picture || !$page || $display_submitted): ?>
-    <header>
+    <div class="header">
       <?php print $user_picture; ?>
 
       <?php print render($title_prefix); ?>
@@ -96,7 +96,7 @@
           ?>
         </p>
       <?php endif; ?>
-    </header>
+    </div>
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
@@ -110,12 +110,12 @@
   </div> <!-- /.content -->
 
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
-    <footer>
+    <div class="footer">
       <?php print render($content['field_tags']); ?>
       <?php print render($content['links']); ?>
-    </footer>
+    </div>
   <?php endif; ?>
 
   <?php print render($content['comments']); ?>
 
-</article> <!-- /.node -->
+</div> <!-- /.node -->
